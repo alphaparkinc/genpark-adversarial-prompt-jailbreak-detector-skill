@@ -1,0 +1,36 @@
+{
+  "name": "genpark-adversarial-prompt-jailbreak-detector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Adversarial prompt jailbreak detector analyzing framing evasion, hypothetical bypasses, and token smuggling exploits.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-security",
+  "tags": [
+    "jailbreak-detector",
+    "adversarial-defense",
+    "prompt-security",
+    "dan-exploit",
+    "red-teaming"
+  ],
+  "inputs": {
+    "prompt_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "analysis_id": {
+      "type": "string"
+    },
+    "jailbreak_risk_score": {
+      "type": "number"
+    },
+    "jailbreak_detected": {
+      "type": "boolean"
+    },
+    "safety_verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
